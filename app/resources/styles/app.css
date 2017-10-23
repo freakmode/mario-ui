@@ -52,7 +52,33 @@ body {
 /******** CONTENT ********/
 .content {
     background: green;
-    opacity: .25
+    opacity: .25;
+    display: grid;
+    grid-template-columns: 635px 1fr;
+}
+
+.big-mario {
+    background-image: url("../images/big-mario.png");
+    background-repeat: no-repeat;
+    background-position: top 45px left 105px;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(6, 60px);
+    grid-row-gap: 3px;
+    grid-column-gap: 15px;
+    background: purple;
+    padding: 15px 0 0 10px;
+}
+
+.skill-container > div {
+    background: red;
+}
+
+.bio {
+    grid-row-end: span 2;
 }
 
 /******** FOOTER ********/
