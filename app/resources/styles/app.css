@@ -18,3 +18,45 @@ body {
     background-attachment: fixed;
     opacity: .25;
 }
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 60px;
+    display: grid;
+    grid-template-rows: 130px 1fr 160px;
+}
+
+/******** HEADER ********/
+.header {
+    display: grid;
+    grid-template-columns: 275px 1fr;
+}
+
+.character-select {
+    background-image: url("../images/character-select.png");
+    background-repeat: no-repeat;
+    background-position: top 17px left 15px;
+}
+
+.character-header {
+    background-image: url("../images/character-header.png");
+    background-repeat: no-repeat;
+    background-position: top 11px left 4px;
+}
+
+
+/******** CONTENT ********/
+.content {
+    background: green;
+    opacity: .25
+}
+
+/******** FOOTER ********/
+.footer {
+    background: yellow;
+    opacity: .25
+}
