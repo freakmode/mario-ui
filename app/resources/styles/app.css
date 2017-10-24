@@ -84,5 +84,11 @@ body {
 /******** FOOTER ********/
 .footer {
     background: yellow;
-    opacity: .25
+    opacity: .25;
+    display: grid;
+    grid-template-columns: 185px 911px 1fr;
+}
+
+.footer > div {
+    border: 1px solid black;
 }
