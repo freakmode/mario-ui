@@ -6,6 +6,7 @@ body {
     height: 100%;
     margin: 0;
     background: linear-gradient(0deg, #030930, #4899cf, #030930);
+    font-family: arial;
 }
 
 .source {
@@ -51,8 +52,6 @@ body {
 
 /******** CONTENT ********/
 .content {
-    background: green;
-    opacity: .25;
     display: grid;
     grid-template-columns: 635px 1fr;
 }
@@ -69,16 +68,40 @@ body {
     grid-template-rows: repeat(6, 60px);
     grid-row-gap: 3px;
     grid-column-gap: 15px;
-    background: purple;
     padding: 15px 0 0 10px;
-}
-
-.skill-container > div {
-    background: red;
 }
 
 .bio {
     grid-row-end: span 2;
+    color: #243d63;
+    background: #82b7d1;
+    border-radius: 20px;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.skill {
+    display: flex;
+    color: white;
+    background: #3376b8;
+    border-radius: 5px;
+}
+
+.skill-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.skill-text {
+    color: #77b8d4;
+    text-transform: capitalize;
+}
+
+.skill-number {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /******** FOOTER ********/
