@@ -106,12 +106,68 @@ body {
 
 /******** FOOTER ********/
 .footer {
-    background: yellow;
-    opacity: .25;
     display: grid;
     grid-template-columns: 185px 911px 1fr;
 }
 
-.footer > div {
-    border: 1px solid black;
+.button-container-stacked {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+    padding-bottom: 10px;
+}
+
+.single-button {
+    grid-area: c;
+}
+
+.button-pill-left,
+.button-pill-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 3px solid #0cb3f0;
+    border-radius: 30px;
+    background: white;
+    padding: 5px;
+    width: 87%;
+}
+
+.button-pill-left {
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.button-text {
+    color: #0cb3f0;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+    border-radius: 50%;
+    background: #0cb3f0;
+    width: 30px;
+    height: 30px;
+}
+
+.headshot-container {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-column-gap: 10px;
+    background: #0056b8;
+    border: 3px solid #00baf7;
+    border-radius: 10px;
+    max-height: 55px;
+    padding: 20px;
 }
